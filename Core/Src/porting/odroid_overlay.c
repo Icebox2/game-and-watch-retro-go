@@ -666,12 +666,12 @@ static bool theme_update_cb(odroid_dialog_choice_t *option, odroid_dialog_event_
         if (theme > 0)
             odroid_settings_theme_set(--theme);
         else {
-            theme = 4;
-            odroid_settings_theme_set(4);
+            theme = 2;
+            odroid_settings_theme_set(2);
         }
     }
     else if (event == ODROID_DIALOG_NEXT) {
-        if (theme < 4) 
+        if (theme < 2) 
             odroid_settings_theme_set(++theme);
         else
         {
